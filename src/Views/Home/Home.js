@@ -33,7 +33,11 @@ class Home extends Component {
                     </Pane>
                     <Pane className="content">
                         <List>
-                            <ListItem>Episode 1</ListItem>
+                            <ListItem content={
+                                <div>
+                                    Hello World!
+                                </div>
+                            }>Episode 1</ListItem>
                             <ListItem>Episode 2</ListItem>
                             <ListItem>Episode 3</ListItem>
                         </List>

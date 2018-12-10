@@ -10,6 +10,8 @@
         width: 50%;
         height: 100vh;
 
+        cursor: pointer;
+
         &.menu {
             width: 30%;
 
@@ -24,6 +26,17 @@
         @media screen and (max-width: 1000px) {
             width: 100%;
             min-width: 100%;
+        }
+
+        .content {
+            min-height: 30vh;
+            padding: 0px 15px;
+            margin-bottom: 15px;
+
+            background-color: #fefefe;
+            color: #333;
+
+            font-size: 16px;
         }
     }
 
