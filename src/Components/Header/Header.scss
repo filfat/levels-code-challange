@@ -1,0 +1,13 @@
+@import '../../scss/shared.scss';
+
+header {
+    height: 50px;
+    padding: 0px 15px;
+
+    background-color: #3498db;
+    color: #fff;
+
+    text-transform: uppercase;
+    line-height: 50px;
+    font-size: 22px;
+}

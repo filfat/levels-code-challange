@@ -1,0 +1,14 @@
+@import '../../scss/shared.scss';
+
+.panes {
+    display: flex;
+
+    .pane {
+        width: 50%;
+
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+}
