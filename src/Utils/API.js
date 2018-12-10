@@ -1,25 +1,24 @@
 import axios from 'axios';
 import Logger from './logger';
 
+import Podcasts from './mock-data/podcasts.json';
+import Episodes from './mock-data/episodes.json';
+
 class API {
-    constructor () {
-        this.axios = axios.create({
-            baseURL: 'https://localhost:5000/',
-            timeout: 5000
-        });
-    }
-
-    Get (path) {
+    // Mock API
+    Get (path, callback) {
         Logger.Info('API', 'Calling "' + path + '"');
+        let data = {};
 
-        const call = this.axios.get(path);
-        call.then((res) => {
-            Logger.Info('API', 'Response from "' + path + '":');
-            Logger.Object(res);
-        }).catch((err) => {
-            Logger.Error('API', 'Response from "' + path + '": "' + err + '"');
-        });
-        return call;
+        if (path === 'podcasts') {
+            data = Podcasts;
+        } else {
+            data = {
+                
+            };
+        }
+
+        callback({ http: 200, data });
     }
 }
 

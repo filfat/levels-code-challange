@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import API from '../../Utils/API';
 
 import Panes from '../../Components/Panes';
 import Pane from '../../Components/Pane';
@@ -7,24 +8,30 @@ import List from '../../Components/List';
 import ListItem from '../../Components/ListItem';
 
 class Home extends Component {
+    state = {
+        podcasts: []
+    };
+
     componentDidMount() {
         document.title = "Home"; // FIXME:
+
+        API.Get('podcasts', (res) => {
+            this.setState({ podcasts: res.data });
+        });
     }
 
     render() {
         return (
 			<div className="home">
                 <Panes>
-                    <Pane type="menu">
+                    <Pane className="menu">
                         <List>
-                            <ListItem>Pod 1</ListItem>
-                            <ListItem>Pod 2</ListItem>
-                            <ListItem>Pod 3</ListItem>
-                            <ListItem>Pod 4</ListItem>
-                            <ListItem>Pod 5</ListItem>
+                            {this.state.podcasts.map((data, i) => {
+                                return <ListItem key={data.id + '-pod'}>{data.title}</ListItem>;
+                            })}
                         </List>
                     </Pane>
-                    <Pane type="content">
+                    <Pane className="content">
                         <List>
                             <ListItem>Episode 1</ListItem>
                             <ListItem>Episode 2</ListItem>

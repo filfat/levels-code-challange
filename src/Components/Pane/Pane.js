@@ -5,7 +5,7 @@ import './Pane.css';
 class Pane extends Component {
     render() {
         return (
-			<div className="pane">
+			<div className={"pane " + (this.props.className ||'')}>
                 {this.props.children}
             </div>
         );
