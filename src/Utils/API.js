@@ -1,4 +1,3 @@
-import axios from 'axios';
 import Logger from './logger';
 
 import Podcasts from './mock-data/podcasts.json';

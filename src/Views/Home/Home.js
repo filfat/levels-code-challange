@@ -9,8 +9,15 @@ import ListItem from '../../Components/ListItem';
 
 class Home extends Component {
     state = {
-        podcasts: []
+        podcasts: [],
+        episodes: []
     };
+
+    constructor(props) {
+        super(props);
+
+        this.loadEpisodes = this.loadEpisodes.bind(this);
+    }
 
     componentDidMount() {
         document.title = "Home"; // FIXME:
@@ -20,6 +27,10 @@ class Home extends Component {
         });
     }
 
+    loadEpisodes() {
+        alert('hi');
+    }
+
     render() {
         return (
 			<div className="home">
@@ -27,7 +38,7 @@ class Home extends Component {
                     <Pane className="menu">
                         <List>
                             {this.state.podcasts.map((data, i) => {
-                                return <ListItem key={data.id + '-pod'}>{data.title}</ListItem>;
+                                return <ListItem key={data.id + '-pod'} onClick={this.loadEpisodes}>{data.title}</ListItem>;
                             })}
                         </List>
                     </Pane>

@@ -10,17 +10,16 @@ class ListItem extends Component {
     constructor(props) {
         super(props);
 
-        this.toggleExpand= this.toggleExpand.bind(this);
+        this.toggleExpand = this.toggleExpand.bind(this);
     }
 
     toggleExpand() {
-        this.setState({ active: !this.state.expanded });
-        console.error('hi!');
+        if(this.props.content) this.setState({ expanded: !this.state.expanded });
     }
 
     render() {
         return (
-			<div className={"list-item" + (this.state.expanded ? ' expanded' : '')} onClick={() => this.toggleExpand}>
+			<div className={"list-item" + (this.state.expanded ? ' expanded' : '')} onClick={this.toggleExpand}>
                 <div className="details">
                     {this.props.children}
 
