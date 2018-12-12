@@ -4,14 +4,12 @@
 html, body {
     overflow-x: hidden;
 
-    width: 100%;
-    padding: 0px;
+    background-color: #3498db; 
 
     font-family: 'Open Sans', sans-serif;
     font-smooth: auto;
     -moz-osx-font-smoothing: auto;
     -webkit-font-smoothing: antialiased;
-
     font-size: 14px;
     @media screen and (max-width: 1200px) {
         font-size: 10px;
@@ -19,9 +17,12 @@ html, body {
 }
 
 main {
+    -webkit-overflow-scroll: none;
     overflow: hidden;
+    
     width: 100%;
     height: calc(100vh - 50px);
+    padding-top: 50px;
 
     background-color: #34495e;
 }
@@ -41,7 +42,7 @@ h1 {
     margin: 2rem 0px 1rem 0px;
     font-weight: 800;
     font-size: 3rem;
-    line-height: 4rem;
+    line-height: 5rem;
     text-transform: capitalize;
 
     @media screen and (max-width: 1020px) {

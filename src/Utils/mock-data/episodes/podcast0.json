@@ -1,0 +1,41 @@
+[
+    {
+        "id": 0,
+        "title": "Blue flower",
+        "description": "A blue flower (German: Blaue Blume) was a central symbol of inspiration for the Romanticism movement, and remains an enduring motif in Western art today. It stands for desire, love, and the metaphysical striving for the infinite and unreachable. It symbolizes hope and the beauty of things.",
+        "podcast": {
+            "id": 0,
+            "title": "Color of flowers",
+            "description": "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Magnoliophyta, also called angiosperms). The biological function of a flower is to effect reproduction, usually by providing a mechanism for the union of sperm with eggs. Flowers may facilitate outcrossing (fusion of sperm and eggs from different individuals in a population) or allow selfing (fusion of sperm and egg from the same flower). Some flowers produce diaspores without fertilization (parthenocarpy). Flowers contain sporangia and are the site where gametophytes develop.",
+            "created": "2017-05-09T06:24:18.216Z"
+        },
+        "duration": 230,
+        "created": "2017-02-10T06:24:18.216Z"
+    },
+    {
+        "id": 1,
+        "title": "Remembrance poppy",
+        "description": "The remembrance poppy is an artificial flower that has been used since 1921 to commemorate military personnel who have died in war, and represents a common or field poppy, Papaver rhoeas. Inspired by the World War I poem In Flanders Fields, and promoted by Moina Michael, they were first adopted by the American Legion to commemorate American soldiers killed in that war (1914–1918). They were then adopted by military veterans' groups in parts of the British Empire.",
+        "podcast": {
+            "id": 0,
+            "title": "Color of flowers",
+            "description": "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Magnoliophyta, also called angiosperms). The biological function of a flower is to effect reproduction, usually by providing a mechanism for the union of sperm with eggs. Flowers may facilitate outcrossing (fusion of sperm and eggs from different individuals in a population) or allow selfing (fusion of sperm and egg from the same flower). Some flowers produce diaspores without fertilization (parthenocarpy). Flowers contain sporangia and are the site where gametophytes develop.",
+            "created": "2017-05-09T06:24:18.216Z"
+        },
+        "duration": 2030,
+        "created": "2017-05-10T06:24:18.216Z"
+    },
+    {
+        "id": 2,
+        "title": "Viola",
+        "description": "Some Viola species are perennial plants, some are annual plants, and a few are small shrubs. A large number of species, varieties and cultivars are grown in gardens for their ornamental flowers. In horticulture the term pansy is normally used for those multi-coloured, large-flowered cultivars which are raised annually or biennially from seed and used extensively in bedding. The terms viola and violet are normally reserved for small-flowered annuals or perennials, including the species.",
+        "podcast": {
+            "id": 0,
+            "title": "Color of flowers",
+            "description": "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Magnoliophyta, also called angiosperms). The biological function of a flower is to effect reproduction, usually by providing a mechanism for the union of sperm with eggs. Flowers may facilitate outcrossing (fusion of sperm and eggs from different individuals in a population) or allow selfing (fusion of sperm and egg from the same flower). Some flowers produce diaspores without fertilization (parthenocarpy). Flowers contain sporangia and are the site where gametophytes develop.",
+            "created": "2017-05-09T06:24:18.216Z"
+        },
+        "duration": 50,
+        "created": "2017-02-07T06:24:18.216Z"
+    }
+]

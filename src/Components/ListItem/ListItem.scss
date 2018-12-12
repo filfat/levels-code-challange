@@ -4,12 +4,11 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 65px;
     min-height: 65px;
     padding: 0px 15px;
 
     color: #fff;
-    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
 
     font-size: 22px;
     line-height: 65px;
@@ -18,6 +17,14 @@
 
     &.expanded {
         height: auto;
+    }
+
+    .details {
+        .description {
+            font-size: 16px;
+            line-height: 22px;
+            padding-bottom: 25px;
+        }
     }
 
     .indicator {

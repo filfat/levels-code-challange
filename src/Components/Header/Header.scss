@@ -1,7 +1,12 @@
 @import '../../scss/shared.scss';
 
 header {
+    z-index: 100;
+    position: fixed;
+    top: 0px; left: 0px;
+
     height: 50px;
+    width: 100vw;
     padding: 0px 15px;
 
     background-color: #3498db;

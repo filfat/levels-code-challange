@@ -10,16 +10,18 @@ class ListItem extends Component {
     constructor(props) {
         super(props);
 
-        this.toggleExpand = this.toggleExpand.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
-    toggleExpand() {
+    handleClick() {
         if(this.props.content) this.setState({ expanded: !this.state.expanded });
+
+        if(this.props.onClick) this.props.onClick();
     }
 
     render() {
         return (
-			<div className={"list-item" + (this.state.expanded ? ' expanded' : '')} onClick={this.toggleExpand}>
+			<div className={"list-item" + (this.state.expanded ? ' expanded' : '')} onClick={this.handleClick}>
                 <div className="details">
                     {this.props.children}
 
@@ -28,7 +30,7 @@ class ListItem extends Component {
                     </div>
                 </div>
 
-                <div className="indicator">{!this.props.content ? '>' : '∨'}</div>
+                {this.props.indicator ? <div className="indicator">{this.state.expanded ? '∧' : '∨'}</div> : null}
             </div>
         );
     }

@@ -5,7 +5,7 @@ import './Panes.css';
 class Panes extends Component {
     render() {
         return (
-			<div className={"panes " + (this.props.className ||'')}>
+			<div className={"panes " + (this.props.className || '') + (this.props.navigated ? 'active' : '')}>
                 {this.props.children}
             </div>
         );
